@@ -3,7 +3,7 @@
 
 
 @STRING{ECC = {European Control Conference (ECC)}}
-@STRING{TCST = {IEEE Transactions on Control System Technologies (TCST)}}
+@STRING{TCST = {IEEE Transactions on Control Systems Technology (TCST)}}
 @STRING{TIV = {IEEE Transactions on Intelligent Vehicles (TIV)}}
 @STRING{EJC = {European Journal of Control}}
 @STRING{CDC = {IEEE Conference on Decision and Control (CDC}}
@@ -13,11 +13,30 @@
 @inproceedings{reiter_progressive_2024,
   author={Reiter, Rudolf and Baumgärtner, Katrin and Quirynen, Rien and Diehl, Moritz},
   title={Progressive Smoothing for Motion Planning in Real-Time NMPC},
+  abstract={Nonlinear model predictive control (NMPC) is a popular strategy for solving motion planning problems appearing in autonomous driving applications that include collision avoidance constraints. Non-smooth obstacle shapes, such as rectangles, introduce additional local minima in the underlying optimization problem. Using smooth over-approximations, e.g., ellipsoidal shapes, limits the performance due to their conservativeness. We propose to vary the smoothness and the related over-approximation by a homotopy. Instead of varying the smoothness in consecutive sequential quadratic programming iterations, we use formulations that decrease the smooth over-approximation from the end towards the beginning of the prediction horizon. Thus, the real-time iteration scheme applies to the proposed NMPC formulation, i.e., only one quadratic program needs to be solved at each time step. Different formulations are compared in simulation experiments and shown to successfully improve performance without increasing the computational burden.},
   booktitle=ECC,
+  pages={1816-1823},
+  doi={10.23919/ECC64448.2024.10590824},
   year={2024},
   html={https://ieeexplore.ieee.org/document/10590824},
   pdf={https://arxiv.org/pdf/2403.01830},
   img={assets/img/publications/lin_prog.jpg},
+}
+
+@inproceedings{reiter_equivariant_2024,
+	title = {Equivariant {Deep} {Learning} of {Mixed}-{Integer} {Optimal} {Control} {Solutions} for {Vehicle} {Decision} {Making} and {Motion} {Planning}},
+    booktitle=TCST,
+	doi = {10.1109/TCST.2024.3400571},
+    pages={1-15},
+    issn = {1558-0865},
+	abstract = {Mixed-integer quadratic programs (MIQPs) are a versatile way of formulating vehicle decision making and motion planning problems, where the prediction model is a hybrid dynamical system that involves both discrete and continuous decision variables. However, even the most advanced MIQP solvers can hardly account for the challenging requirements of automotive embedded platforms. Thus, we use machine learning to simplify and hence speed up optimization. Our work builds on recent ideas for solving MIQPs in real-time by training a neural network to predict the optimal values of integer variables and solving the remaining problem by online quadratic programming. Specifically, we propose a recurrent permutation equivariant deep set that is particularly suited for imitating MIQPs that involve many obstacles, which is often the major source of computational burden in motion planning problems. Our framework comprises also a feasibility projector that corrects infeasible predictions of integer variables and considerably increases the likelihood of computing a collision-free trajectory. We evaluate the performance, safety and real-time feasibility of decision-making for autonomous driving using the proposed approach on realistic multi-lane traffic scenarios with interactive agents in SUMO simulations.},
+	author = {Reiter, Rudolf and Quirynen, Rien and Diehl, Moritz and Di Cairano, Stefano},
+	month = may,
+	year = {2024},
+	keywords = {Computer Science - Robotics, Electrical Engineering and Systems Science - Systems and Control},
+    html={https://ieeexplore.ieee.org/document/10551458/keywords#keywords},
+    pdf={https://publications.syscop.de/Reiter2024b.pdf},
+    img={assets/img/publications/network_architecture.jpg},
 }
 
 
