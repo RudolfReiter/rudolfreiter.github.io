@@ -7,6 +7,7 @@
 @STRING{TIV = {IEEE Transactions on Intelligent Vehicles (TIV)}}
 @STRING{EJC = {European Journal of Control}}
 @STRING{CDC = {IEEE Conference on Decision and Control (CDC}}
+@STRING{NMPC = {IFAC Conference on Nonlinear Model Predictive Control (IFAC NMPC}}
 @STRING{ARXIV = {arXiv.org}}
 
 
@@ -72,4 +73,93 @@
     img={assets/img/publications/frenet.jpg}
 }
 
+@inproceedings{reiter_hierarchical_2023,
+	title = {A {Hierarchical} {Approach} for {Strategic} {Motion} {Planning} in {Autonomous} {Racing}},
+	doi = {10.23919/ECC57647.2023.10178143},
+	abstract = {We present an approach for safe trajectory planning, where a strategic task related to autonomous racing is learned sample efficiently within a simulation environment. A high-level policy, represented as a neural network, outputs a reward specification that is used within the function of a parametric nonlinear model predictive controller. By including constraints and vehicle kinematics in the nonlinear program, we can guarantee safe and feasible trajectories related to the used model. Compared to classical reinforcement learning, our approach restricts the exploration to safe trajectories, starts with an excellent prior performance and yields complete trajectories that can be passed to a tracking lowest-level controller. We do not address the lowest-level controller in this work and assume perfect tracking of feasible trajectories. We show the superior performance of our algorithm on simulated racing tasks that include high-level decision-making. The vehicle learns to efficiently overtake slower vehicles and avoids getting overtaken by blocking faster ones.},
+	booktitle = ECC,
+	author = {Reiter, Rudolf and Hoffmann, Jasper and Boedecker, Joschka and Diehl, Moritz},
+	month = jun,
+	year = {2023},
+	pages = {1--8},
+    html={https://ieeexplore.ieee.org/document/10178143},
+    pdf={https://publications.syscop.de/Reiter2023.pdf},
+    img={assets/img/publications/mpcrl.jpg}
+}
+
+@inproceedings{baumgartner_moving_2022,
+	address = {Cancun, Mexico},
+	title = {Moving {Horizon} {Estimation} with {Adaptive} {Regularization} for {Ill}-{Posed} {State} and {Parameter} {Estimation} {Problems}},
+	copyright = {https://doi.org/10.15223/policy-029},
+	isbn = {978-1-66546-761-2},
+	doi = {10.1109/CDC51059.2022.9993416},
+	abstract = {We investigate the usage of Moving Horizon Estimation (MHE) for state and parameter estimation for partially non-detectable systems with measurements corrupted by outliers. We propose an arrival cost update formula based on the Generalized Gauss-Newton method and illustrate how it can be generalized to nonconvex loss functions that can be effectively used for outlier rejection. Moreover, we propose an adaptive regularization scheme for the arrival cost which introduces forgetting as well as additional pseudo-measurements to the arrival cost update. We illustrate the performance of the proposed algorithms on a longitudinal vehicle state and parameter estimation problem.},
+	language = {en},
+	booktitle = CDC,
+	publisher = {IEEE},
+	author = {Baumgartner, Katrin and Reiter, Rudolf and Diehl, Moritz},
+	month = dec,
+	year = {2022},
+	pages = {2165--2171},
+    html={https://ieeexplore.ieee.org/abstract/document/9993416},
+    pdf={https://publications.syscop.de/Baumgaertner2022b.pdf},
+    img={assets/img/publications/mhe.png}
+}
+
+@inproceedings{reiter_inverse_2022,
+	address = {London, United Kingdom},
+	title = {An {Inverse} {Optimal} {Control} {Approach} for {Trajectory} {Prediction} of {Autonomous} {Race} {Cars}},
+	isbn = {978-3-907144-07-7},
+	url = {https://ieeexplore.ieee.org/document/9838100/},
+	doi = {10.23919/ECC55457.2022.9838100},
+	abstract = {This paper proposes an optimization-based approach to predict trajectories of autonomous race cars. We assume that the observed trajectory is the result of an optimization problem that trades off path progress against acceleration and jerk smoothness, and which is restricted by constraints. The algorithm predicts a trajectory by solving a parameterized nonlinear program (NLP) which contains path progress and smoothness in cost terms. By observing the actual motion of a vehicle, the parameters of prediction are updated by means of solving an inverse optimal control problem that contains the parameters of the predicting NLP as optimization variables. The algorithm therefore learns to predict the observed vehicle trajectory in a least-squares relation to measurement data and to the presumed structure of the predicting NLP. This work contributes with an algorithm that allows for accurate and interpretable predictions with sparse data. The algorithm is implemented on embedded hardware in an autonomous real-world race car that is competing in the challenge Roborace and analyzed with respect to recorded data.},
+	language = {en},
+	booktitle = ECC,
+	publisher = {IEEE},
+	author = {Reiter, Rudolf and Messerer, Florian and Schratter, Markus and Watzenig, Daniel and Diehl, Moritz},
+	month = jul,
+	year = {2022},
+	pages = {146--153},
+    html={https://ieeexplore.ieee.org/document/9838100},
+    pdf={https://publications.syscop.de/Reiter2022.pdf},
+    img={assets/img/publications/inverse.png}
+}
+
+@inproceedings{reiter_parameterization_2021,
+	address = {Delft, Netherlands},
+	title = {Parameterization Approach of the Frenet Transformation for Model Predictive Control of Autonomous Vehicles},
+	isbn = {978-94-6384-236-5},
+	url = {https://ieeexplore.ieee.org/document/9655053/},
+	doi = {10.23919/ECC54610.2021.9655053},
+	abstract = {Model predictive control (MPC) and nonlinear optimization-based planning for autonomous vehicles are often formulated in a transformed coordinate frame, namely the curvilinear Frenet frame. Mostly the center line of the road is used as a transformation curve, but the choice of the transformation curve might have properties which make the optimization problem hard or even infeasible to solve in the whole search space. This paper proposes an optimization-based parameterization approach to establish an alternative transformation curve which yields favorable numerical properties for the consecutive use of numerical optimization approaches such as MPC. The optimization objective minimizes the change of curvature and pushes the evolute (i.e. singular region) of the transformation curve outside the feasible region. The convergence improvement of the proposed parameterization approach in terms of integrator precision, optimization time and iteration counts is compared in simulation examples, using a time-optimal nonlinear optimization formulation.},
+	language = {en},
+	booktitle = ECC,
+	publisher = {IEEE},
+	author = {Reiter, Rudolf and Diehl, Moritz},
+	month = jun,
+	year = {2021},
+	pages = {2414--2419},
+    html={https://ieeexplore.ieee.org/document/9655053/},
+    pdf={https://publications.syscop.de/Reiter2021.pdf},
+    img={assets/img/publications/param.png}
+}
+
+@inproceedings{reiter_mixed-integer_2021,
+	series = {7th {IFAC} {Conference} on {Nonlinear} {Model} {Predictive} {Control} {NMPC}},
+	title = {Mixed-integer optimization-based planning for autonomous racing with obstacles and rewards},
+	volume = {54},
+	issn = {2405-8963},
+	doi = {10.1016/j.ifacol.2021.08.530},
+	abstract = {Trajectory planning with the consideration of obstacles is a classical task in autonomous driving and robotics applications. This paper introduces a novel solution approach for the subclass of autonomous racing problems which is additionally capable of dealing with reward objects. This special type of objects is representing particular regions in state space, whose optional reaching is somehow beneficial (e.g. results in bonus points during a race). First, a homotopy class is selected which represents the left/right and catch/ignore decisions related to obstacle avoidance and reward collection, respectively. For this purpose, a linear mixed-integer problem is posed such that an approximated combinatorial problem is solved and repetitive switching decisions between solver calls are avoided. Secondly, an optimal control problem (OCP) based on a single-track vehicle model is solved within this homotopy class. In the corresponding nonlinear program, homotopy iterations are performed on the race track boundaries which correspond to the previously chosen homotopy class. This leads to an improved convergence of the solver compared to the direct approach. The mixed-integer method’s effectiveness is demonstrated within a real-world test scenario during the autonomous racing competition Roborace. Furthermore, its combination with the OCP as well as the performance gain resulting from the homotopy iterations are shown in simulation.},
+	number = {6},
+	booktitle = NMPC,
+	author = {Reiter, Rudolf and Kirchengast, Martin and Watzenig, Daniel and Diehl, Moritz},
+	month = jan,
+	year = {2021},
+	keywords = {autonomous mobile robots, autonomous vehicles, integer programming, obstacle avoidance, optimal trajectory, planning},
+	pages = {99--106},
+    html={https://www.sciencedirect.com/science/article/pii/S2405896321013057},
+    pdf={https://publications.syscop.de/Reiter2021a.pdf},
+    img={assets/img/publications/rviz2.png}
+}
 
