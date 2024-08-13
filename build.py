@@ -1,19 +1,21 @@
 from pybtex.database.input import bibtex
 
 def get_personal_data():
-    name = ["Michael", "Niemeyer"]
-    email = "micniemeyer1@gmail.com"
-    twitter = "Mi_Niemeyer"
-    github = "m-niemeyer"
-    linkedin = "michael-niemeyer"
+    name = ["Rudolf", "Reiter"]
+    email = "rudolf.reiter@imtek.uni-freiburg.de"
+    github = "RudolfReiter"
     bio_text = f"""
                 <p>
-                    I am a research scientist at Google working on 3D computer vision and generative modeling.
-                    Prior to joining Google, I was a PhD student at the <a href="https://uni-tuebingen.de/en/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/home/" target="_blank">Max Planck Insitute for Intelligent Systems</a> supervised by <a href="https://www.cvlibs.net/" target="_blank">Andreas Geiger</a>.
-                    As an undergraduate student, I studied Mathematics at the <a href="http://www.mi.uni-koeln.de/main/index.en.php" target="_blank">University of Cologne (Germany)</a> and computer science as the Master's at the 
-                    <a href="https://www.st-andrews.ac.uk/computer-science/" target="_blank">University of St Andrews (UK)</a>.
+                    I started my Ph.D. in 2020 under the supervision of Prof. Dr. Mortiz Diehl and will defend my thesis with the title "Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving" in November 2024.
+                    I received my Master's degree in electrical engineering from the <a href="https://www.tugraz.at/en/fakultaeten/etit/home" target="_blank">Graz University of Technology</a>, Austria, in 2016, with a focus on control systems. 
+                    From 2016 to 2018, I worked as a control systems specialist at <a href=" https://www.anton-paar.com/corp-en/about-us/" target="_blank">Anton Paar GmbH</a> in Graz, Austria. 
+                    From 2018 to 2021, I worked as a researcher for the <a href=" https://www.virtual-vehicle.at/" target="_blank">Virtual Vehicle Research Center</a> in Graz, Austria.  
+                    Since 2021, I continued my Ph.D. at a <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a> position at the University of Freiburg, Germany in the <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>. 
+                    In the course of my Ph.D. program, I stayed at <a href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> with Prof. Dr. Alberto Bemporad, at the <a href="https://www.merl.com/" target="_blank">Mitsubishi Electric Research Laboratories</a>in Cambridge, MA, US, and at the <a href="https://idsc.ethz.ch/research-zeilinger.html" target="_blank">ETH Zürich</a> with Prof. Dr. Melanie Zeilinger to collaborate on research projects. 
+                    My research focus is on learning- and optimization-based motion planning and control for autonomous robots, and I am an active member of the <a href="https://autonomousracing.ai/" target="_blank">Autonomous Racing Graz</a> team.
                 </p>
-                <p>For any inquiries, feel free to reach out to me via mail!</p>
+                <p>For any inquiries, please contact me via mail!</p>
+            <!--
                 <p>
                     <a href="https://m-niemeyer.github.io/assets/other/bio.txt" target="_blank" style="margin-right: 5px"><i class="fa-solid fa-graduation-cap"></i> Bio</a>
                     <a href="https://m-niemeyer.github.io/assets/pdf/CV_Niemeyer_Michael.pdf" target="_blank" style="margin-right: 5px"><i class="fa fa-address-card fa-lg"></i> CV</a>
@@ -31,6 +33,7 @@ def get_personal_data():
                     In 2021, we received the CS teaching award for our <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/autonomous-vision/lectures/computer-vision/" target="_blank">computer vision lecture</a> as well as  <a href="https://cyber-valley.de/en/news/meet-the-ai-gamedev-winners" target="blank">the AIGameDev scientific award</a> for our GRAF project and <a href="https://cvpr2021.thecvf.com/node/329" target="_blank">the CVPR Best Paper Award</a> for GIRAFFE (<a href="https://cyber-valley.de/en/news/best-paper-cvpr-2021" target="_blank">news coverage</a>).
                 </div>
                 </p>
+            -->
     """
     footer = """
             <div class="col-sm-12" style="">
@@ -46,58 +49,6 @@ def get_personal_data():
 
 def get_author_dict():
     return {
-        'Andreas Geiger': 'https://www.cvlibs.net/',
-        'Songyou Peng': 'https://pengsongyou.github.io/',
-        'Zehao Yu': 'https://niujinshuchong.github.io/',
-        'Torsten Sattler': 'https://tsattler.github.io/',
-        'Katja Schwarz': 'https://katjaschwarz.github.io/',
-        'Axel Sauer': 'https://axelsauer.com/',
-        'Jonathan Barron': 'https://jonbarron.info/',
-        'Ben Mildenhall': 'https://bmild.github.io/',
-        'Mehdi Sajjadi': 'https://msajjadi.com/',
-        'Noha Radwan': 'http://www2.informatik.uni-freiburg.de/~radwann/',
-        'Chiyu Jiang': 'https://www.maxjiang.ml/',
-        'Yiyi Liao': 'https://yiyiliao.github.io/',
-        'Marc Pollefeys': 'https://people.inf.ethz.ch/pomarc/',
-        'Michael Oechsle': 'https://moechsle.github.io/',
-        'Christian Reiser': 'https://creiser.github.io/',
-        'Lars Mescheder': 'https://scholar.google.de/citations?user=h2k1gL4AAAAJ&hl=de',
-        'Thilo Strauss': 'https://scholar.google.com/citations?user=VlymtLQAAAAJ&hl=en',
-        'Sebastian Nowozin': 'http://www.nowozin.net/sebastian/',
-        'Marie-Julie Rakotosaona': 'http://www.lix.polytechnique.fr/Labo/Marie-Julie.RAKOTOSAONA/',
-        'Fabian Manhardt': 'https://campar.in.tum.de/Main/FabianManhardt',
-        'Diego Martin Arroyo': 'https://martinarroyo.net/',
-        'Abhijit Kundu': 'https://abhijitkundu.info/',
-        'Federico Tombari': 'https://www.cs.cit.tum.de/camp/members/senior-research-scientists/federico-tombari/',
-        'Anpei Chen': 'https://apchenstu.github.io/',
-        'Bozidar Antic': 'https://bozidarantic.com/',
-        'Apratim Bhattacharyya': 'https://apratimbhattacharyya18.github.io/',
-        'Siyu Tang': 'https://inf.ethz.ch/people/person-detail.MjYyNzgw.TGlzdC8zMDQsLTg3NDc3NjI0MQ==.html',
-        'Hidenobu Matsuki': 'https://dblp.org/pid/225/4487.html',
-        'Keisuke Tateno': 'https://campar.in.tum.de/Main/KeisukeTateno',
-        'Alessio Tonioni': 'https://alessiotonioni.github.io/',
-        'Christina Tsalicoglou': 'https://scholar.google.ch/citations?user=7D10QQkAAAAJ&hl=en', 
-        'Amit Raj': 'https://amitraj93.github.io/',
-        'Srinivas Kaza': 'https://www.linkedin.com/in/srinivas-kaza-64223b74',
-        'Ben Poole': 'https://poolio.github.io/',
-        'Nataniel Ruiz': 'https://natanielruiz.github.io/',
-        'Shiran Zada': 'https://scholar.google.com/citations?user=I2qheksAAAAJ',
-        'Kfir Aberman': 'https://kfiraberman.github.io/',
-        'Michael Rubinstein': 'http://people.csail.mit.edu/mrub/',
-        'Yuanzhen Li': 'http://people.csail.mit.edu/yzli/',
-        'Varun Jampani': 'https://varunjampani.github.io/',
-        'Francis Engelmann': 'https://francisengelmann.github.io/',
-        'Mohamad Shahbazi': 'https://mohamad-shahbazi.github.io/',
-        'Liesbeth Claessens': 'https://asl.ethz.ch/the-lab/people/person-detail.MjY5NDUz.TGlzdC8xNTg0LDEyMDExMzk5Mjg=.html',
-        'Edo Collins': 'https://www.linkedin.com/in/edo-collins/?originalSubdomain=ch',
-        'Luc Van Gool': 'https://ee.ethz.ch/the-department/faculty/professors/person-detail.OTAyMzM=.TGlzdC80MTEsMTA1ODA0MjU5.html',
-        'Fangjinhua Wang': 'https://fangjinhuawang.github.io/',
-        'Richard Szeliski': 'https://szeliski.org/',
-        'Kunyi Li': 'https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/visitenkarte.show_vcard?$ctx=design=ca2;header=max;lang=de&pPersonenGruppe=3&pPersonenId=6EC78DAA25310FF2',
-        'Nassir Navab': 'https://www.professoren.tum.de/en/navab-nassir',
-        'Rama Gosula': 'https://arvr.google.com/',
-        'John Bates': 'https://arvr.google.com/',
-        'Dominik Kaeser': 'https://scholar.google.com/citations?user=DQ4838YAAAAJ&hl=en',
         }
 
 def generate_person_html(persons, connection=", ", make_bold=True, make_bold_name='Michael Niemeyer', add_links=True):
