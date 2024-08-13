@@ -7,11 +7,11 @@ def get_personal_data():
     bio_text = f"""
                 <p>
                     I started my Ph.D. in 2020 under the supervision of Prof. Dr. Mortiz Diehl and will defend my thesis with the title "Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving" in November 2024.
-                    I received my Master's degree in electrical engineering from the <a href="https://www.tugraz.at/en/fakultaeten/etit/home" target="_blank">Graz University of Technology</a>, Austria, in 2016, with a focus on control systems. 
+                    I received my Master's degree in electrical engineering from the <a href="https://www.tugraz.at/en/fakultaeten/etit/home" target="_blank">Graz University of Technology</a>, Austria, in 2016, focusing on control systems. 
                     From 2016 to 2018, I worked as a control systems specialist at <a href=" https://www.anton-paar.com/corp-en/about-us/" target="_blank">Anton Paar GmbH</a> in Graz, Austria. 
                     From 2018 to 2021, I worked as a researcher for the <a href=" https://www.virtual-vehicle.at/" target="_blank">Virtual Vehicle Research Center</a> in Graz, Austria.  
-                    Since 2021, I continued my Ph.D. at a <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a> position at the University of Freiburg, Germany in the <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>. 
-                    In the course of my Ph.D. program, I stayed at <a href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> with Prof. Dr. Alberto Bemporad, at the <a href="https://www.merl.com/" target="_blank">Mitsubishi Electric Research Laboratories</a>in Cambridge, MA, US, and at the <a href="https://idsc.ethz.ch/research-zeilinger.html" target="_blank">ETH Zürich</a> with Prof. Dr. Melanie Zeilinger to collaborate on research projects. 
+                    Since 2021, I continued my Ph.D. at a <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a> position at the University of Freiburg, Germany, in the <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>. 
+                    In the course of my Ph.D. program, I stayed at <a href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> with Prof. Dr. Alberto Bemporad, at the <a href="https://www.merl.com/" target="_blank">Mitsubishi Electric Research Laboratories</a> in Cambridge, MA, US, and at the <a href="https://idsc.ethz.ch/research-zeilinger.html" target="_blank">ETH Zürich</a> with Prof. Dr. Melanie Zeilinger to collaborate on research projects. 
                     My research focus is on learning- and optimization-based motion planning and control for autonomous robots, and I am an active member of the <a href="https://autonomousracing.ai/" target="_blank">Autonomous Racing Graz</a> team.
                 </p>
                 <p>For any inquiries, please contact me via mail!</p>
@@ -176,7 +176,7 @@ def get_index_html():
                         {bio_text}
                     </div>
                     <div class="col-md-2" style="">
-                        <img src="assets/img/profile.jpg" class="img-thumbnail" width="280px" alt="Profile picture">
+                        <img src="assets/img/profile.jpg" class="img-thumbnail" width="480px" alt="Profile picture">
                     </div>
                 </div>
                 <div class="row" style="margin-top: 1em;">

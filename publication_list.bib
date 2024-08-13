@@ -11,16 +11,16 @@
 
 
 @inproceedings{reiter_progressive_2024,
-  author={Reiter, Rudolf and Baumgärtner, Katrin and Quirynen, Rien and Diehl, Moritz},
-  title={Progressive Smoothing for Motion Planning in Real-Time NMPC},
-  abstract={Nonlinear model predictive control (NMPC) is a popular strategy for solving motion planning problems appearing in autonomous driving applications that include collision avoidance constraints. Non-smooth obstacle shapes, such as rectangles, introduce additional local minima in the underlying optimization problem. Using smooth over-approximations, e.g., ellipsoidal shapes, limits the performance due to their conservativeness. We propose to vary the smoothness and the related over-approximation by a homotopy. Instead of varying the smoothness in consecutive sequential quadratic programming iterations, we use formulations that decrease the smooth over-approximation from the end towards the beginning of the prediction horizon. Thus, the real-time iteration scheme applies to the proposed NMPC formulation, i.e., only one quadratic program needs to be solved at each time step. Different formulations are compared in simulation experiments and shown to successfully improve performance without increasing the computational burden.},
-  booktitle=ECC,
-  pages={1816-1823},
-  doi={10.23919/ECC64448.2024.10590824},
-  year={2024},
-  html={https://ieeexplore.ieee.org/document/10590824},
-  pdf={https://arxiv.org/pdf/2403.01830},
-  img={assets/img/publications/lin_prog.jpg},
+    author={Reiter, Rudolf and Baumgärtner, Katrin and Quirynen, Rien and Diehl, Moritz},
+    title={Progressive Smoothing for Motion Planning in Real-Time NMPC},
+    abstract={Nonlinear model predictive control (NMPC) is a popular strategy for solving motion planning problems appearing in autonomous driving applications that include collision avoidance constraints. Non-smooth obstacle shapes, such as rectangles, introduce additional local minima in the underlying optimization problem. Using smooth over-approximations, e.g., ellipsoidal shapes, limits the performance due to their conservativeness. We propose to vary the smoothness and the related over-approximation by a homotopy. Instead of varying the smoothness in consecutive sequential quadratic programming iterations, we use formulations that decrease the smooth over-approximation from the end towards the beginning of the prediction horizon. Thus, the real-time iteration scheme applies to the proposed NMPC formulation, i.e., only one quadratic program needs to be solved at each time step. Different formulations are compared in simulation experiments and shown to successfully improve performance without increasing the computational burden.},
+    booktitle=ECC,
+    pages={1816-1823},
+    doi={10.23919/ECC64448.2024.10590824},
+    year={2024},
+    html={https://ieeexplore.ieee.org/document/10590824},
+    pdf={https://arxiv.org/pdf/2403.01830},
+    img={assets/img/publications/lin_prog.jpg},
 }
 
 @inproceedings{reiter_equivariant_2024,
@@ -40,6 +40,36 @@
 }
 
 
+@inproceedings{reiter_long_short_term_2024,
+    author={Reiter, Rudolf and Nurkanović, Armin and Bernardini, Daniele and Diehl, Moritz and Bemporad, Alberto},
+    booktitle=TIV,
+    title={A Long-Short-Term Mixed-Integer Formulation for Highway Lane Change Planning},
+    year={2024},
+    issn = {2379-8904},
+    abstract = {This work considers the problem of optimal lane changing in a structured multi-agent road environment. A novel motion planning algorithm that can capture long-horizon dependencies as well as short-horizon dynamics is presented. Pivotal to our approach is a geometric approximation of the long-horizon combinatorial transition problem which we formulate in the continuous time-space domain. Moreover, a discrete-time formulation of a short-horizon optimal motion planning problem is formulated and combined with the long-horizon planner. Both individual problems, as well as their combination, are formulated as mixed-integer quadratic programs (MIQPs) and solved in real-time by using state-of-the-art solvers. We show how the presented algorithm outperforms two other state-of-the-art motion planning algorithms in closed-loop performance and computation time in lane changing problems. Evaluations are performed using the traffic simulator SUMO, a custom low-level tracking model predictive controller, and high-fidelity vehicle models and scenarios, provided by the CommonRoad environment.},
+    volume={},
+    number={},
+    pages={1-15},
+    keywords={Planning;Trajectory;Computational modeling;Roads;Approximation algorithms;Optimization;Intelligent vehicles;Autonomous Vehicles;Motion Planning;Control and Optimization;Vehicle Control Systems},
+    doi={10.1109/TIV.2024.3398805},
+    html={https://ieeexplore.ieee.org/document/10526407/authors#authors},
+    pdf={https://publications.syscop.de/Reiter2024.pdf},
+    img={assets/img/publications/polyhedron2.png}
+}
 
+@inproceedings{reiter_frenet-cartesian_2023,
+	title = {Frenet-{Cartesian} model representations for automotive obstacle avoidance within nonlinear {MPC}},
+	issn = {0947-3580},
+	doi = {https://doi.org/10.1016/j.ejcon.2023.100847},
+	abstract = {In recent years, nonlinear model predictive control has been extensively used for solving automotive motion control and planning tasks. In order to formulate the nonlinear model predictive control problem, different coordinate systems can be used with different advantages. We propose and compare formulations for the nonlinear MPC related optimization problem, involving a Cartesian and a Frenet coordinate frame in a single nonlinear program. We specify costs and collision avoidance constraints in the more advantageous coordinate frame, derive appropriate formulations and compare different obstacle constraints. With this approach, we exploit the simpler formulation of opponent vehicle constraints in the Cartesian coordinate frame, as well as road-aligned costs and constraints related to the Frenet coordinate frame. Comparisons to other approaches in a simulation framework highlight the advantages of the proposed methods.},
+	ooktitle=EJC,
+	author = {Reiter, Rudolf and Nurkanović, Armin and Frey, Jonathan and Diehl, Moritz},
+	year = {2023},
+	keywords = {Automotive control, Curvilinear coordinate frame, Frenet transformation, Motion planning, Obstacle avoidance},
+	pages = {100847},
+    html={https://www.sciencedirect.com/science/article/pii/S0947358023000766},
+    pdf={https://publications.syscop.de/Reiter2023a.pdf},
+    img={assets/img/publications/frenet.jpg}
+}
 
 
