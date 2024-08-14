@@ -3,7 +3,6 @@ from pybtex.database.input import bibtex
 def get_personal_data():
     name = ["Rudolf", "Reiter"]
     email = "rudolf.reiter@imtek.uni-freiburg.de"
-    github = "RudolfReiter"
     bio_text = f"""
                 <p>
                     I am currently pursuing a Ph.D. with the thesis title "Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving" under the supervision of Prof. Dr. Moritz Diehl and will defend in November 2024.
@@ -19,7 +18,15 @@ def get_personal_data():
                                           
                     My research focus is on learning- and optimization-based motion planning and control for autonomous robots, and I am an active member of the <a href="https://autonomousracing.ai/" target="_blank">Autonomous Racing Graz</a> team.
                 </p>
-                <p>For any inquiries, please contact me via mail!</p>
+                
+                <p>
+                    <a href="https://rudolfreiter.github.io/assets/pdf/reiter_cv.pdf" target="_blank" style="margin-right: 15px"><i class="fa fa-address-card fa-lg"></i> CV</a>
+                    <a href="mailto:{email}" style="margin-right: 15px"><i class="far fa-envelope-open fa-lg"></i> Mail</a>
+                    <a href="https://scholar.google.com/citations?user=5VdYugYAAAAJ&hl=en" target="_blank" style="margin-right: 15px"><i class="fa-solid fa-book"></i> Scholar</a>
+                    <a href="https://https://github.com/RudolfReiter" target="_blank" style="margin-right: 15px"><i class="fab fa-github fa-lg"></i> Github</a>
+                    <a href="https://www.linkedin.com/in/rudolf-reiter-ba8777157" target="_blank" style="margin-right: 15px"><i class="fab fa-linkedin fa-lg"></i> LinkedIn</a>
+                </p>
+
             <!--
                 <p>
                     <a href="https://m-niemeyer.github.io/assets/other/bio.txt" target="_blank" style="margin-right: 5px"><i class="fa-solid fa-graduation-cap"></i> Bio</a>
