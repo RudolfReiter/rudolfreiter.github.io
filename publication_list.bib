@@ -8,8 +8,51 @@
 @STRING{EJC = {European Journal of Control}}
 @STRING{CDC = {IEEE Conference on Decision and Control (CDC}}
 @STRING{NMPC = {IFAC Conference on Nonlinear Model Predictive Control (IFAC NMPC)}}
+@STRING{IROS = {IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)}}
 @STRING{ARXIV = {arXiv.org}}
 
+
+
+@inproceedings{reiter2024ac4mpc,
+	title={AC4MPC: Actor-Critic Reinforcement Learning for Nonlinear Model Predictive Control},
+	author={Rudolf Reiter and Andrea Ghezzi and Katrin Baumgärtner and Jasper Hoffmann and Robert D. McAllister and Moritz Diehl},
+	year={2024},
+	booktitle=ARXIV,
+	eprint={2406.03995},
+	archivePrefix={arXiv},
+	primaryClass={eess.SY},
+	url={https://arxiv.org/abs/2406.03995},
+	video={https://rudolfreiter.github.io/ac4mpc_vis/},
+    html={https://rudolfreiter.github.io/ac4mpc_vis/},
+    pdf={https://arxiv.org/pdf/2406.03995},
+    img={assets/img/publications/ac4mpc.jpg},
+}
+
+
+@inproceedings{mamedov_safety_2024,
+	title={Safe Imitation Learning of Nonlinear Model Predictive Control for Flexible Robots},
+	author={Shamil Mamedov and Rudolf Reiter and Seyed Mahdi Basiri Azad and Joschka Boedecker and Moritz Diehl and Jan Swevers},
+	year={2024},
+	booktitle=IROS,
+	eprint={2212.02941},
+	archivePrefix={arXiv},
+	primaryClass={cs.RO},
+	code={https://github.com/shamilmamedov/flexible_arm},
+	video={https://github.com/shamilmamedov/flexible_arm},
+	url={https://arxiv.org/abs/2212.02941},
+    html={https://ieeexplore.ieee.org/document/10590824},
+    pdf={https://publications.syscop.de/Mamedov2024.pdf},
+    img={assets/img/publications/sf.png},
+}
+
+@inproceedings{akash_model_2024,
+	title={Model Predictive Control for Frenet-Cartesian Trajectory Tracking of a Tricycle Kinematic Automated Guided Vehicle},
+	author={Akash Subash and Daniel Kloeser and Jonathan Frey and Rudolf Reiter and Moritz Diehl and Karsten Bohlmann},
+	year={2024},
+	booktitle=IROS,
+	html={https://ieeexplore.ieee.org/document/10590824},
+    img={assets/img/publications/robot.png},
+}
 
 @inproceedings{reiter_progressive_2024,
     author={Reiter, Rudolf and Baumgärtner, Katrin and Quirynen, Rien and Diehl, Moritz},
@@ -59,7 +102,7 @@
 }
 
 @inproceedings{reiter_frenet-cartesian_2023,
-	title = {Frenet-{Cartesian} model representations for automotive obstacle avoidance within nonlinear {MPC}},
+	title = {Frenet-Cartesian model representations for automotive obstacle avoidance within nonlinear MPC},
 	issn = {0947-3580},
 	doi = {https://doi.org/10.1016/j.ejcon.2023.100847},
 	abstract = {In recent years, nonlinear model predictive control has been extensively used for solving automotive motion control and planning tasks. In order to formulate the nonlinear model predictive control problem, different coordinate systems can be used with different advantages. We propose and compare formulations for the nonlinear MPC related optimization problem, involving a Cartesian and a Frenet coordinate frame in a single nonlinear program. We specify costs and collision avoidance constraints in the more advantageous coordinate frame, derive appropriate formulations and compare different obstacle constraints. With this approach, we exploit the simpler formulation of opponent vehicle constraints in the Cartesian coordinate frame, as well as road-aligned costs and constraints related to the Frenet coordinate frame. Comparisons to other approaches in a simulation framework highlight the advantages of the proposed methods.},
@@ -74,7 +117,7 @@
 }
 
 @inproceedings{reiter_hierarchical_2023,
-	title = {A {Hierarchical} {Approach} for {Strategic} {Motion} {Planning} in {Autonomous} {Racing}},
+	title = {A Hierarchical Approach for Strategic Motion Planning in Autonomous Racing},
 	doi = {10.23919/ECC57647.2023.10178143},
 	abstract = {We present an approach for safe trajectory planning, where a strategic task related to autonomous racing is learned sample efficiently within a simulation environment. A high-level policy, represented as a neural network, outputs a reward specification that is used within the function of a parametric nonlinear model predictive controller. By including constraints and vehicle kinematics in the nonlinear program, we can guarantee safe and feasible trajectories related to the used model. Compared to classical reinforcement learning, our approach restricts the exploration to safe trajectories, starts with an excellent prior performance and yields complete trajectories that can be passed to a tracking lowest-level controller. We do not address the lowest-level controller in this work and assume perfect tracking of feasible trajectories. We show the superior performance of our algorithm on simulated racing tasks that include high-level decision-making. The vehicle learns to efficiently overtake slower vehicles and avoids getting overtaken by blocking faster ones.},
 	booktitle = ECC,
@@ -84,12 +127,12 @@
 	pages = {1--8},
     html={https://ieeexplore.ieee.org/document/10178143},
     pdf={https://publications.syscop.de/Reiter2023.pdf},
-    img={assets/img/publications/mpcrl.jpg}
+    img={assets/img/publications/race.png}
 }
 
 @inproceedings{baumgartner_moving_2022,
 	address = {Cancun, Mexico},
-	title = {Moving {Horizon} {Estimation} with {Adaptive} {Regularization} for {Ill}-{Posed} {State} and {Parameter} {Estimation} {Problems}},
+	title = {Moving Horizon Estimation with Adaptive Regularization for Ill-Posed State and Parameter Estimation Problems},
 	copyright = {https://doi.org/10.15223/policy-029},
 	isbn = {978-1-66546-761-2},
 	doi = {10.1109/CDC51059.2022.9993416},
@@ -108,7 +151,7 @@
 
 @inproceedings{reiter_inverse_2022,
 	address = {London, United Kingdom},
-	title = {An {Inverse} {Optimal} {Control} {Approach} for {Trajectory} {Prediction} of {Autonomous} {Race} {Cars}},
+	title = {An Inverse Optimal Control Approach for Trajectory Prediction of Autonomous Race Cars},
 	isbn = {978-3-907144-07-7},
 	url = {https://ieeexplore.ieee.org/document/9838100/},
 	doi = {10.23919/ECC55457.2022.9838100},
@@ -145,7 +188,7 @@
 }
 
 @inproceedings{reiter_mixed-integer_2021,
-	series = {7th {IFAC} {Conference} on {Nonlinear} {Model} {Predictive} {Control} {NMPC}},
+	series = {7th IFAC Conference on Nonlinear Model Predictive Control NMPC},
 	title = {Mixed-integer optimization-based planning for autonomous racing with obstacles and rewards},
 	volume = {54},
 	issn = {2405-8963},
@@ -160,6 +203,7 @@
 	pages = {99--106},
     html={https://www.sciencedirect.com/science/article/pii/S2405896321013057},
     pdf={https://publications.syscop.de/Reiter2021a.pdf},
-    img={assets/img/publications/rviz2.png}
+    img={assets/img/publications/bedford.png},
+	video={https://www.youtube.com/watch?v=13QFtoW1wpI}
 }
 
