@@ -175,7 +175,7 @@ def get_index_html():
                     <h3 class="display-4" style="text-align: center;"><span style="font-weight: bold;">{name[0]}</span> {name[1]}</h3>
                     </div>
                     <br>
-                    <div class="col-md-10" style="">
+                    <div class="col-md-9" style="">
                         {bio_text}
                     </div>
                     <div class="col-md-3" style="">
