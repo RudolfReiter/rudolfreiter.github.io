@@ -11,7 +11,7 @@ def get_personal_data():
                     Since 2021, I am part of a <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a> for "embedded learning and optimization for the next generation of industrial systems". 
                     I hold a research position at the University of Freiburg, Germany, in the <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>. 
                     In the course my doctoral research, I stayed at <a href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> with Prof. Dr. Alberto Bemporad, at the <a href="https://www.merl.com/" target="_blank">Mitsubishi Electric Research Laboratories</a> in Cambridge, MA, US, and at the <a href="https://idsc.ethz.ch/research-zeilinger.html" target="_blank">ETH Zürich</a> with Prof. Dr. Melanie Zeilinger to collaborate on research projects. 
-   
+                    <br>
                     Before starting my doctoral research, I studied electrical engineering at the <a href="https://www.tugraz.at/en/fakultaeten/etit/home" target="_blank">Graz University of Technology</a>, Austria, and worked in industry for several years.
                     In my Master program, I focused on control systems and obtained the Master's degree in 2016. 
                     From 2016 to 2018, I worked as a control systems specialist at <a href=" https://www.anton-paar.com/corp-en/about-us/" target="_blank">Anton Paar GmbH</a> in Graz, Austria. 
