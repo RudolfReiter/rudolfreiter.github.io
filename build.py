@@ -5,18 +5,18 @@ def get_personal_data():
     email = "rudolf.reiter@imtek.uni-freiburg.de"
     bio_text = f"""
                 <p>
-                    In November 2024, I successfully defended my Ph.D. at the University of Freiburg, Germany, with the title "Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving and Racing", which was supervised by Prof. Dr. Moritz Diehl.
-                    I am excited to start a new position as a postdoctoral researcher at the <a href="https://rpg.ifi.uzh.ch/index.html" target="_blank">Robotics and Perception Group</a> at University of Zurich, Switzerland, with Prof. Dr. Davide Scaramuzza.
-
+                    In November 2024, I successfully defended my Ph.D. with the title "Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving and Racing" at the University of Freiburg, Germany. The thesis was supervised by Prof. Dr. Moritz Diehl.
+                    I am excited to start a new position in February 2025 as a postdoctoral researcher at the <a href="https://rpg.ifi.uzh.ch/index.html" target="_blank">Robotics and Perception Group</a> at University of Zurich, Switzerland, with Prof. Dr. Davide Scaramuzza.
+                    <br>
                     From 2021 to 2024, I have been part of a <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a> for "embedded learning and optimization for the next generation of industrial systems". 
-                    I hold a research position at the University of Freiburg, Germany, in the <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>. 
+                    I currently still hold a research position at the University of Freiburg, Germany, in the <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>. 
                     In the course of my doctoral research, I stayed at <a href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> with Prof. Dr. Alberto Bemporad, at the <a href="https://www.merl.com/" target="_blank">Mitsubishi Electric Research Laboratories</a> in Cambridge, MA, US, and at <a href="https://idsc.ethz.ch/research-zeilinger.html" target="_blank">ETH Zürich</a> with Prof. Dr. Melanie Zeilinger to collaborate on research projects. 
                     <br>
                     Before starting my doctoral research, I studied electrical engineering at the <a href="https://www.tugraz.at/en/fakultaeten/etit/home" target="_blank">Graz University of Technology</a>, Austria, and worked in industry for several years.
                     In my Master's program, I focused on control systems and obtained the Master's degree in 2016. 
                     From 2016 to 2018, I worked as a control systems specialist at <a href=" https://www.anton-paar.com/corp-en/about-us/" target="_blank">Anton Paar GmbH</a> in Graz, Austria. 
                     From 2018 to 2021, I worked as a researcher for the <a href=" https://www.virtual-vehicle.at/" target="_blank">Virtual Vehicle Research Center</a> in Graz, Austria.  
-                                          
+                    <br>                    
                     My research focuses on learning- and optimization-based motion planning and control for autonomous robots, and I was a member of the <a href="https://autonomousracing.ai/" target="_blank">Autonomous Racing Graz</a> team.
                 </p>
                 
