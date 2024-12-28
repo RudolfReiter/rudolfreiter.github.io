@@ -6,7 +6,7 @@ def get_personal_data():
     bio_text = f"""
                 <p>
                     In November 2024, I successfully defended my Ph.D. with the title "Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving and Racing" at the University of Freiburg, Germany. The thesis was supervised by Prof. Dr. Moritz Diehl.
-                    I am excited to start a new position in February 2025 as a postdoctoral researcher at the <a href="https://rpg.ifi.uzh.ch/index.html" target="_blank">Robotics and Perception Group</a> at University of Zurich, Switzerland, with Prof. Dr. Davide Scaramuzza.
+                    I am excited to start a new position in February 2025 as a postdoctoral researcher at the <a href="https://rpg.ifi.uzh.ch/index.html" target="_blank">Robotics and Perception Group</a> at the University of Zurich, Switzerland, with Prof. Dr. Davide Scaramuzza.
                     <br>
                     From 2021 to 2024, I have been part of a <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a> for "embedded learning and optimization for the next generation of industrial systems". 
                     I currently still hold a research position at the University of Freiburg, Germany, in the <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>. 
