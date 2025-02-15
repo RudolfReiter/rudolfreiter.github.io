@@ -5,19 +5,43 @@ def get_personal_data():
     email = "rreiter@ifi.uzh.ch"
     bio_text = f"""
                 <p>
-                    I am a postdoctoral researcher in the fields of controls, optimization, machine learning and robotics in the <a href="https://rpg.ifi.uzh.ch/index.html" target="_blank">Robotics and Perception Group</a> in Zürich, Switzerland with Prof. Davide Scaramuzza and, partly, in the <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a> in Freiburg, Germany with Prof. Moritz Diehl.
+                    I am a postdoctoral researcher specializing in advanced controls, optimization, machine learning, and robotics. 
+                    My current work takes place in the 
+                    <a href="https://rpg.ifi.uzh.ch/index.html" target="_blank">Robotics and Perception Group</a>
+                    under Prof. Davide Scaramuzza in Zürich, Switzerland, and in the 
+                    <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>
+                    with Prof. Moritz Diehl at the University of Freiburg, Germany. A key focus of my research is on 
+                    learning- and optimization-based motion planning and control for autonomous systems, 
+                    particularly model-based reinforcement learning approaches that embed predictive 
+                    planners into RL policies.
                     <br>
-                    During my Ph.D. with the topic "Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving and Racing", I focused on numerical and combinatorial optimization for autonomous driving, supported by machine learning algorithms to relieve the challenging computational burden. The thesis was written between 2021 and 2024 at the University of Freiburg, Germany, and supervised by Prof. Dr. Moritz Diehl.
-                    The Ph.D. was part of the prestigious <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a> for "embedded learning and optimization for the next generation of industrial systems". 
-                    In the course of my doctoral research, I stayed at <a href="https://www.imtlucca.it/en" target="_blank">IMT Lucca</a> with Prof. Dr. Alberto Bemporad, at the <a href="https://www.merl.com/" target="_blank">Mitsubishi Electric Research Laboratories</a> in Cambridge, MA, US, and at <a href="https://idsc.ethz.ch/research-zeilinger.html" target="_blank">ETH Zürich</a> with Prof. Dr. Melanie Zeilinger to collaborate on research projects. 
                     <br>
-                    Before starting my doctoral research, I studied electrical engineering at the <a href="https://www.tugraz.at/en/fakultaeten/etit/home" target="_blank">Graz University of Technology</a>, Austria, and worked in industry for several years.
-                    In my Master's program, I focused on control systems and obtained the Master's degree in 2016. 
-                    From 2016 to 2018, I worked as a control systems specialist at <a href=" https://www.anton-paar.com/corp-en/about-us/" target="_blank">Anton Paar GmbH</a> and
-                    from 2018 to 2021 as an applied scientist for the <a href=" https://www.virtual-vehicle.at/" target="_blank">Virtual Vehicle Research Center</a> in Graz, Austria.  
-                    Moreover, I was a member of the <a href="https://autonomousracing.ai/" target="_blank">Autonomous Racing Graz</a> team between 2021 and 2024, where we competed in real-world autonomous racing competitions.
-                    <br>                    
-                    My research focuses on learning- and optimization-based motion planning and control for autonomous systems. I am particularly interested model-based RL, such as approaches that embed predictive planners into RL policies.
+                    Between 2021 and 2024, I pursued my Ph.D. at the University of Freiburg. 
+                    My thesis, titled “Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving and Racing”, 
+                    was funded by the prestigious 
+                    <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a>  
+                    and supervised by Prof. Dr. Moritz Diehl. 
+                    In this work, I used numerical and combinatorial optimization techniques, 
+                    aided by machine learning methods, to address the computational demands of autonomous driving. 
+                    During my doctoral studies, I collaborated with leading research institutions and industry labs, 
+                    including IMT Lucca under Prof. Dr. Alberto Bemporad, the 
+                    <a href="https://www.merl.com/" target="_blank">Mitsubishi Electric Research Laboratories</a> 
+                    in Cambridge, MA, and ETH Zürich with Prof. Dr. Melanie Zeilinger.
+                    <br>
+                    <br>
+                    Prior to my Ph.D., I earned a Master's degree in Electrical Engineering 
+                    (with a focus on control systems) from Graz University of Technology, Austria, in 2016. 
+                    I then built several years of industry experience: first as a control systems specialist at 
+                    <a href=" https://www.anton-paar.com/corp-en/about-us/" target="_blank">Anton Paar GmbH</a> 
+                    (2016–2018), and later as an applied scientist at the 
+                    <a href=" https://www.virtual-vehicle.at/" target="_blank">Virtual Vehicle Research Center</a> 
+                    (2018–2021). Alongside my research activities, 
+                    I was also a member of the 
+                    <a href="https://autonomousracing.ai/" target="_blank">Autonomous Racing Graz</a> 
+                    team from 2021 to 2024, competing in real-world autonomous racing challenges.
+                    <br>
+                    <br>
+                    Below, you can find further information such as a CV, a list of my publications and public talks.
                 </p>
                 
                 <p>
