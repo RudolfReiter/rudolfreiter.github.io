@@ -8,15 +8,15 @@ def get_personal_data():
                     I am a postdoctoral researcher specializing in advanced controls, optimization, machine learning, and robotics. 
                     My current work takes place in the 
                     <a href="https://rpg.ifi.uzh.ch/index.html" target="_blank">Robotics and Perception Group</a>
-                    under Prof. Davide Scaramuzza in Zürich, Switzerland, and in the 
-                    <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>
-                    with Prof. Moritz Diehl at the University of Freiburg, Germany. A key focus of my research is on 
+                    under Prof. Davide Scaramuzza in Zürich, Switzerland. A key focus of my research is on 
                     learning- and optimization-based motion planning and control for autonomous systems, 
                     particularly model-based reinforcement learning approaches that embed predictive 
                     planners into RL policies.
                     <br>
                     <br>
-                    Between 2021 and 2024, I pursued my Ph.D. at the University of Freiburg. 
+                    Between 2021 and 2024, I pursued my Ph.D. at the University of Freiburg, Germany in the 
+                    <a href="https://www.syscop.de/index.php/" target="_blank">Systems Control and Optimization Laboratory</a>
+                    with Prof. Moritz Diehl. 
                     My thesis, titled “Optimization-Based Motion Planning and Obstacle Avoidance for Autonomous Driving and Racing”, 
                     was funded by the prestigious 
                     <a href="https://elo-x.eu/" target="_blank">Marie-Skłodowska Curie Innovative Training Network</a>  
