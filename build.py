@@ -106,7 +106,7 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
 
 def get_paper_entry(entry_key, entry):
     s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
-    s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail" alt="Project image">"""
+    s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail hover-color" alt="Project image">"""
     s += """</div><div class="col-sm-9">"""
 
     if 'award' in entry.fields.keys():
@@ -117,7 +117,7 @@ def get_paper_entry(entry_key, entry):
     s += f"""{generate_person_html(entry.persons['author'])} <br>"""
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
 
-    artefacts = {'html': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplemental', 'video': 'Video', 'poster': 'Poster', 'code': 'Code'}
+    artefacts = {'project': 'Project Page', 'pdf': 'Paper', 'supp': 'Supplemental', 'video': 'Video', 'poster': 'Poster', 'code': 'Code'}
     i = 0
     for (k, v) in artefacts.items():
         if k in entry.fields.keys():
@@ -125,8 +125,6 @@ def get_paper_entry(entry_key, entry):
                 s += ' / '
             s += f"""<a href="{entry.fields[k]}" target="_blank">{v}</a>"""
             i += 1
-        else:
-            print(f'[{entry_key}] Warning: Field {k} missing!')
 
     cite = "<pre><code>@InProceedings{" + f"{entry_key}, \n"
     cite += "\tauthor = {" + f"{generate_person_html(entry.persons['author'], make_bold=False, add_links=False, connection=' and ')}" + "}, \n"
@@ -139,7 +137,7 @@ def get_paper_entry(entry_key, entry):
 
 def get_talk_entry(entry_key, entry):
     s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
-    s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail" alt="Project image">"""
+    s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail hover-color" alt="Project image">"""
     s += """</div><div class="col-sm-9">"""
     s += f"""{entry.fields['title']}<br>"""
     s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
@@ -152,8 +150,6 @@ def get_talk_entry(entry_key, entry):
                 s += ' / '
             s += f"""<a href="{entry.fields[k]}" target="_blank">{v}</a>"""
             i += 1
-        else:
-            print(f'[{entry_key}] Warning: Field {k} missing!')
     s += """ </div> </div> </div>"""
     return s
 
@@ -195,6 +191,10 @@ def get_index_html():
 
   <title>{name[0] + ' ' + name[1]}</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <style>
+    .hover-color {{ filter: grayscale(100%); transition: filter 0.4s ease; }}
+    .hover-color:hover {{ filter: grayscale(0%); }}
+  </style>
 </head>
 
 <body>
