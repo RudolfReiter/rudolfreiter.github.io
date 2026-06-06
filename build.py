@@ -91,7 +91,9 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
     s = ""
     for p in persons:
         string_part_i = ""
-        for name_part_i in p.get_part('first') + p.get_part('last'): 
+        for name_part_i in (p.get_part('first') + p.get_part('middle')
+                            + p.get_part('prelast') + p.get_part('last')
+                            + p.get_part('lineage')):
             if string_part_i != "":
                 string_part_i += " "
             string_part_i += name_part_i
@@ -105,7 +107,7 @@ def generate_person_html(persons, connection=", ", make_bold=True, make_bold_nam
     return s
 
 def get_paper_entry(entry_key, entry):
-    s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
+    s = """<div style="margin-bottom: 3em;"> <div class="row pub-row"><div class="col-sm-3">"""
     s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail hover-color" alt="Project image">"""
     s += """</div><div class="col-sm-9">"""
 
@@ -126,17 +128,23 @@ def get_paper_entry(entry_key, entry):
             s += f"""<a href="{entry.fields[k]}" target="_blank">{v}</a>"""
             i += 1
 
-    cite = "<pre><code>@InProceedings{" + f"{entry_key}, \n"
-    cite += "\tauthor = {" + f"{generate_person_html(entry.persons['author'], make_bold=False, add_links=False, connection=' and ')}" + "}, \n"
-    for entr in ['title', 'booktitle', 'year']:
-        cite += f"\t{entr} = " + "{" + f"{entry.fields[entr]}" + "}, \n"
-    cite += """}</pre></code>"""
+    # Build a complete, citable BibTeX entry: keep all bibliographic fields,
+    # skip the ones that only drive the website (images, links, etc.).
+    skip_fields = {'img', 'html', 'pdf', 'video', 'code', 'project', 'supp',
+                   'poster', 'abstract', 'keywords', 'copyright', 'language'}
+    cite = "<pre><code>@" + entry.type.capitalize() + "{" + f"{entry_key},\n"
+    cite += "  author = {" + f"{generate_person_html(entry.persons['author'], make_bold=False, add_links=False, connection=' and ')}" + "},\n"
+    for entr in entry.fields.keys():
+        if entr.lower() in skip_fields or not entry.fields[entr].strip():
+            continue
+        cite += f"  {entr} = " + "{" + f"{entry.fields[entr]}" + "},\n"
+    cite += """}</code></pre>"""
     s += " /" + f"""<button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapse{entry_key}" aria-expanded="false" aria-controls="collapseExample" style="margin-left: -6px; margin-top: -2px;">Expand bibtex</button><div class="collapse" id="collapse{entry_key}"><div class="card card-body">{cite}</div></div>"""
     s += """ </div> </div> </div>"""
     return s
 
 def get_talk_entry(entry_key, entry):
-    s = """<div style="margin-bottom: 3em;"> <div class="row"><div class="col-sm-3">"""
+    s = """<div style="margin-bottom: 3em;"> <div class="row pub-row"><div class="col-sm-3">"""
     s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail hover-color" alt="Project image">"""
     s += """</div><div class="col-sm-9">"""
     s += f"""{entry.fields['title']}<br>"""
@@ -193,7 +201,7 @@ def get_index_html():
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <style>
     .hover-color {{ filter: grayscale(100%); transition: filter 0.4s ease; }}
-    .hover-color:hover {{ filter: grayscale(0%); }}
+    .pub-row:hover .hover-color {{ filter: grayscale(0%); }}
   </style>
 </head>
 
