@@ -148,7 +148,10 @@ def get_talk_entry(entry_key, entry):
     s += f"""<img src="{entry.fields['img']}" class="img-fluid img-thumbnail hover-color" alt="Project image">"""
     s += """</div><div class="col-sm-9">"""
     s += f"""{entry.fields['title']}<br>"""
-    s += f"""<span style="font-style: italic;">{entry.fields['booktitle']}</span>, {entry.fields['year']} <br>"""
+    booktitle = entry.fields['booktitle']
+    if 'html' in entry.fields.keys():
+        booktitle = f"""<a href="{entry.fields['html']}" target="_blank">{booktitle}</a>"""
+    s += f"""<span style="font-style: italic;">{booktitle}</span>, {entry.fields['year']} <br>"""
 
     artefacts = {'slides': 'Slides', 'video': 'Recording'}
     i = 0
@@ -210,7 +213,7 @@ def get_index_html():
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <style>
     body {{
-      background-color: #f6f4ef; /* pale warm off-white */
+      background-color: #f5f5f5; /* very light grey */
       color: #35322c;
     }}
     a, .btn-link {{ color: #55707d; }}
@@ -223,8 +226,8 @@ def get_index_html():
       letter-spacing: 0.03em;
     }}
     .display-4 {{ color: #3d3931; }}
-    .img-thumbnail {{ background-color: #fbfaf7; border-color: #d9d3c5; }}
-    .card {{ background-color: #f7f4ec; border-color: #ded7c6; }}
+    .img-thumbnail {{ background-color: #ffffff; border-color: #dcdad4; }}
+    .card {{ background-color: #f8f7f4; border-color: #ded7c6; }}
     pre {{ color: #4c463c; margin-bottom: 0; }}
     .hover-color {{ filter: grayscale(100%); transition: filter 0.4s ease; }}
     .pub-row:hover .hover-color {{ filter: grayscale(0%); }}
