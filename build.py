@@ -200,6 +200,32 @@ def get_index_html():
   <title>{name[0] + ' ' + name[1]}</title>
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <style>
+    body {{
+      background-color: #eceae4; /* pale warm grey */
+      color: #35322c;
+    }}
+    .container {{
+      background-color: #fbfaf7;
+      border: 1px solid #ddd8cc;
+      border-radius: 8px;
+      box-shadow: 0 2px 14px rgba(85, 75, 55, 0.08);
+      margin-top: 2.5em;
+      margin-bottom: 2.5em;
+      padding-bottom: 1em;
+    }}
+    a, .btn-link {{ color: #55707d; }}
+    a:hover, .btn-link:hover {{ color: #7d6046; }}
+    h4 {{
+      color: #4c463c;
+      border-bottom: 2px solid #d9cfba;
+      padding-bottom: 0.35em;
+      margin-bottom: 1.2em;
+      letter-spacing: 0.03em;
+    }}
+    .display-4 {{ color: #3d3931; }}
+    .img-thumbnail {{ background-color: #fbfaf7; border-color: #d9d3c5; }}
+    .card {{ background-color: #f7f4ec; border-color: #ded7c6; }}
+    pre {{ color: #4c463c; margin-bottom: 0; }}
     .hover-color {{ filter: grayscale(100%); transition: filter 0.4s ease; }}
     .pub-row:hover .hover-color {{ filter: grayscale(0%); }}
   </style>
