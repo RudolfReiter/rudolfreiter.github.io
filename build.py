@@ -161,10 +161,19 @@ def get_talk_entry(entry_key, entry):
     s += """ </div> </div> </div>"""
     return s
 
+MONTH_NUMBERS = {'jan': 1, 'feb': 2, 'mar': 3, 'apr': 4, 'may': 5, 'jun': 6,
+                 'jul': 7, 'aug': 8, 'sep': 9, 'oct': 10, 'nov': 11, 'dec': 12}
+
+def get_entry_date(entry):
+    year = int(entry.fields.get('year', 0))
+    month = MONTH_NUMBERS.get(str(entry.fields.get('month', '')).strip().lower()[:3], 0)
+    return (year, month)
+
 def get_publications_html():
     parser = bibtex.Parser()
     bib_data = parser.parse_file('publication_list.bib')
-    keys = bib_data.entries.keys()
+    keys = sorted(bib_data.entries.keys(),
+                  key=lambda k: get_entry_date(bib_data.entries[k]), reverse=True)
     s = ""
     for k in keys:
         s+= get_paper_entry(k, bib_data.entries[k])
@@ -201,17 +210,8 @@ def get_index_html():
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
   <style>
     body {{
-      background-color: #eceae4; /* pale warm grey */
+      background-color: #f6f4ef; /* pale warm off-white */
       color: #35322c;
-    }}
-    .container {{
-      background-color: #fbfaf7;
-      border: 1px solid #ddd8cc;
-      border-radius: 8px;
-      box-shadow: 0 2px 14px rgba(85, 75, 55, 0.08);
-      margin-top: 2.5em;
-      margin-bottom: 2.5em;
-      padding-bottom: 1em;
     }}
     a, .btn-link {{ color: #55707d; }}
     a:hover, .btn-link:hover {{ color: #7d6046; }}
